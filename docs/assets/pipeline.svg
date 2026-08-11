@@ -1,0 +1,87 @@
+<svg width="1200" height="240" viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AURA pipeline: inbox to profiler to synthesizer to knowledge to agents to verified answer, all traced">
+  <defs>
+    <style>
+      .sans { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: Consolas, "SF Mono", "JetBrains Mono", Menlo, monospace; }
+      .node   { fill: #161b22; stroke-width: 1.2; }
+      .label  { fill: #e6edf3; font-size: 13px; font-weight: 600; }
+      .sub    { fill: #8b949e; font-size: 10.5px; }
+      .flow   { fill: none; stroke-width: 1.6; stroke-dasharray: 5 7; animation: fl 2.4s linear infinite; }
+      @keyframes fl { to { stroke-dashoffset: -48; } }
+      .in1 { opacity: 0; animation: fi 0.7s ease-out 0.10s forwards; }
+      .in2 { opacity: 0; animation: fi 0.7s ease-out 0.35s forwards; }
+      .in3 { opacity: 0; animation: fi 0.7s ease-out 0.60s forwards; }
+      .in4 { opacity: 0; animation: fi 0.7s ease-out 0.85s forwards; }
+      .in5 { opacity: 0; animation: fi 0.7s ease-out 1.10s forwards; }
+      .in6 { opacity: 0; animation: fi 0.7s ease-out 1.35s forwards; }
+      .in7 { opacity: 0; animation: fi 0.7s ease-out 1.60s forwards; }
+      @keyframes fi { to { opacity: 1; } }
+      .breathe  { animation: br 3.6s ease-in-out infinite; }
+      .breathe2 { animation: br 3.6s ease-in-out 1.2s infinite; }
+      .breathe3 { animation: br 3.6s ease-in-out 2.4s infinite; }
+      @keyframes br { 0%,100% { stroke-opacity: 0.45; } 50% { stroke-opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="238" rx="16" fill="#0d1117" stroke="#21262d"/>
+
+  <!-- ================= main pipeline row ================= -->
+  <g class="in1">
+    <rect class="node breathe" x="30" y="52" width="150" height="58" rx="10" stroke="#7aa2f7"/>
+    <text class="sans label" x="105" y="77" text-anchor="middle">KNOWLEDGE INBOX</text>
+    <text class="mono sub"  x="105" y="95" text-anchor="middle">schemas + sample data</text>
+  </g>
+
+  <path class="flow" d="M180 81 H 222" stroke="#7aa2f7"/>
+
+  <g class="in2">
+    <rect class="node breathe2" x="222" y="52" width="130" height="58" rx="10" stroke="#7aa2f7"/>
+    <text class="sans label" x="287" y="77" text-anchor="middle">PROFILER</text>
+    <text class="mono sub"  x="287" y="95" text-anchor="middle">deterministic truth</text>
+  </g>
+
+  <path class="flow" d="M352 81 H 394" stroke="#bb9af7"/>
+
+  <g class="in3">
+    <rect class="node breathe3" x="394" y="52" width="176" height="58" rx="10" stroke="#bb9af7"/>
+    <text class="sans label" x="482" y="77" text-anchor="middle">ONTOLOGY SYNTHESIZER</text>
+    <text class="mono sub"  x="482" y="95" text-anchor="middle">propose &#8594; reflect &#8594; validate</text>
+  </g>
+
+  <path class="flow" d="M570 81 H 612" stroke="#bb9af7"/>
+
+  <g class="in4">
+    <rect class="node breathe" x="612" y="52" width="170" height="58" rx="10" stroke="#bb9af7"/>
+    <text class="sans label" x="697" y="77" text-anchor="middle">GRAPH + MEMORY</text>
+    <text class="mono sub"  x="697" y="95" text-anchor="middle">hybrid GraphRAG recall</text>
+  </g>
+
+  <path class="flow" d="M782 81 H 824" stroke="#56b6c2"/>
+
+  <g class="in5">
+    <rect class="node breathe2" x="824" y="52" width="180" height="58" rx="10" stroke="#56b6c2"/>
+    <text class="sans label" x="914" y="72" text-anchor="middle">SUPERVISOR + AGENTS</text>
+    <text class="mono sub"  x="914" y="88" text-anchor="middle">DAG plans &#183; typed contracts</text>
+    <text class="mono sub"  x="914" y="101" text-anchor="middle">debate &#183; parallel fan-out</text>
+  </g>
+
+  <path class="flow" d="M1004 81 H 1046" stroke="#56b6c2"/>
+
+  <g class="in6">
+    <rect class="node breathe3" x="1046" y="52" width="124" height="58" rx="10" stroke="#9ece6a"/>
+    <text class="sans label" x="1108" y="77" text-anchor="middle">ANSWER</text>
+    <text class="mono sub"  x="1108" y="95" text-anchor="middle">verified &#183; cited</text>
+  </g>
+
+  <!-- ================= telemetry rail ================= -->
+  <g class="in7">
+    <path class="flow" d="M105 110 V 152"  stroke="#414868"/>
+    <path class="flow" d="M482 110 V 152"  stroke="#414868"/>
+    <path class="flow" d="M914 110 V 152"  stroke="#414868"/>
+    <path class="flow" d="M1108 110 V 152" stroke="#414868"/>
+
+    <rect class="node" x="30" y="152" width="1140" height="56" rx="10" stroke="#414868"/>
+    <text class="sans label" x="600" y="175" text-anchor="middle" fill="#a9b1d6">EVERY SPAN TRACED</text>
+    <text class="mono sub"  x="600" y="193" text-anchor="middle">dashboard &#183; agent theater (2D/3D) &#183; live SSE &#183; explanation chains &#183; OTLP &#183; audit trail &#183; golden-set gate on every change</text>
+  </g>
+</svg>

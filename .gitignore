@@ -1,0 +1,34 @@
+# This is a documentation-only repository. Nothing executable belongs here.
+# Guard against accidentally committing implementation or local artefacts.
+
+# Source / build — must never appear in this repo
+aura/
+tests/
+benchmarks/
+theater_app/
+*.py
+*.pyc
+__pycache__/
+pyproject.toml
+setup.py
+Dockerfile
+docker-compose*.yml
+server.json
+.github/
+
+# Local state
+*.db
+*.db-wal
+*.db-shm
+.env
+.env.*
+*.log
+.venv*/
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
