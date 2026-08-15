@@ -16,8 +16,8 @@
       @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
     </style>
   </defs>
-  <text x="500" y="29" text-anchor="middle" class="mono line" fill="#7aa2f7">drop your database tables in&#160;&#160;&#8594;&#160;&#160;an agentic pipeline builds the ontology, graph and memory</text>
-  <text x="500" y="29" text-anchor="middle" class="mono line l2" fill="#bb9af7">ask in natural language&#160;&#160;&#8594;&#160;&#160;watch every routing, planning and tool decision replay as a traced chain</text>
-  <text x="500" y="29" text-anchor="middle" class="mono line l3" fill="#56b6c2">runs on a laptop or an air-gapped intranet box&#160;&#160;&#8594;&#160;&#160;no GPU, no cloud bill, keyless-testable end to end</text>
+  <text x="500" y="29" text-anchor="middle" class="mono line" fill="#7aa2f7">point it at your data&#160;&#160;&#8594;&#160;&#160;it works out what everything means, on its own</text>
+  <text x="500" y="29" text-anchor="middle" class="mono line l2" fill="#bb9af7">ask a question in plain English&#160;&#160;&#8594;&#160;&#160;then watch exactly how it reached the answer</text>
+  <text x="500" y="29" text-anchor="middle" class="mono line l3" fill="#56b6c2">runs on your own laptop or server&#160;&#160;&#8594;&#160;&#160;no graphics card, and your data never leaves</text>
   <rect x="978" y="16" width="9" height="18" fill="#56b6c2" class="caret"/>
 </svg>
